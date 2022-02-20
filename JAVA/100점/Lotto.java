@@ -14,6 +14,10 @@ public class Lotto {
 				if(lottos[i]==win_nums[j]) collect++;
 			}
 		}
+		if(count==0&&collect==0){
+            int answer[]= {6,6};
+		    return answer;
+        }
 		int answer2 = (len+1)-collect-0;
 		if(answer2==len+1) --answer2;
 		int answer1 = (len+1)-collect-count;
